@@ -1,3 +1,6 @@
+# Advanced Computer Vision Project
+This code is modified for a project course in the University of Trento, basically what we did was testing if Demofusion could benefit from a model distillation, changing the SDXL Backbone with SDXL Turbo, there is also a pdf with our presentation and results. The code is functionaly the same except for all the modification needed to make it run with SDXL Turbo instead of SDXL
+
 # DemoFusion
 [![Project Page](https://img.shields.io/badge/Project-Page-green.svg)](https://ruoyidu.github.io/demofusion/demofusion.html)
 [![arXiv](https://img.shields.io/badge/arXiv-2311.16973-b31b1b.svg)](https://arxiv.org/pdf/2311.16973.pdf)

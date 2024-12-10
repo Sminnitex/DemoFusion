@@ -177,7 +177,11 @@ class DemoFusionSDXLPipeline(DiffusionPipeline, FromSingleFileMixin, LoraLoaderM
         self.register_to_config(force_zeros_for_empty_prompt=force_zeros_for_empty_prompt)
         self.vae_scale_factor = 2 ** (len(self.vae.config.block_out_channels) - 1)
         self.image_processor = VaeImageProcessor(vae_scale_factor=self.vae_scale_factor)
-        self.default_sample_size = self.unet.config.sample_size
+       #self.default_sample_size = self.unet.config.sample_size
+        self.hard_sample_size = 128
+        #self.unet.config.sample_size
+        self.default_sample_size = self.hard_sample_size
+        self.unet.config.sample_size = self.hard_sample_size
 
         add_watermarker = add_watermarker if add_watermarker is not None else is_invisible_watermark_available()
 
@@ -900,7 +904,7 @@ class DemoFusionSDXLPipeline(DiffusionPipeline, FromSingleFileMixin, LoraLoaderM
             self.unet.cpu()
             self.text_encoder.to(device)
             self.text_encoder_2.to(device)
-            image_lr.cpu()
+            #image_lr.cpu()
 
         # here `guidance_scale` is defined analog to the guidance weight `w` of equation (2)
         # of the Imagen paper: https://arxiv.org/pdf/2205.11487.pdf . `guidance_scale = 1`

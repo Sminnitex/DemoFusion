@@ -1,0 +1,55 @@
+Test runnati su google collab, demo normale con 17GB Vram
+
+NORMALE DEMOFUSION
+phase 1 - denoising: 44sec
+phase 2 - denoising: 11:12min
+phase 2 - decoding: 1:53min
+phase 3 - denoising: 29:09min
+phase 3 - decoding: 4:23min
+TOTALE: 47:23min
+
+SDXL Turbo 20steps
+phae 2 8 minutes
+phase 3 20 minutes
+phase 4 45 minutes
+
+SDXL base 10 steps
+
+DEMOFUSION INPUT 512X512
+phase 1 - denoising: 38sec
+phase 2 - denoising: 11:10min
+phase 2 - decoding: 1:52min
+phase 3 - denoising: 24:36min
+phase 3 - decoding: 4:24min
+TOTALE: 42:40min
+
+DEMOFUSION SDXL TURBO
+phase 1 - denoising: 10sec
+phase 2 - denoising: 1:47min
+phase 2 - decoding: 29sec
+phase 3 - denoising: 4:14min
+phase 3 - decoding: 1:06min
+phase 4 -denoising: 7:32min
+phase 4 - decoding: 1:59min
+phase 5 -denoising: 11:48min
+phase 5 - decoding: 3:09min
+phase 6 -denoising: 16:59min
+phase 6 - decoding: 4:31min
+TOTALE: 
+
+
+DEMOFUSION QUANTIZATION FP16
+phase 1 - denoising: 38sec
+phase 2 - denoising: 10:52min
+phase 2 - decoding: 1:51min
+phase 3 - denoising: 24:36min
+phase 3 - decoding: 4:24min
+TOTALE: 42:40min
+
+DEMOFUSION QUANTIZATION INT8 VAE LOWRAM
+phase 1 - denoising: 
+phase 2 - denoising: 
+phase 2 - decoding: 
+phase 3 - denoising: 
+phase 3 - decoding: 
+TOTALE: 42:40min
